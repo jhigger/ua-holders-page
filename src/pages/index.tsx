@@ -19,9 +19,9 @@ const Home: NextPage = () => {
 				<title>Utility Ape | Holders</title>
 				<meta
 					name="description"
-					content="#1 Community growth tools in the space!"
+					content="Community, Utility, and Security for the Solana ecosystem through our advanced Discord bots & web3 integrations."
 				/>
-				<link rel="icon" href="assets/images/utilityape.png" />
+				<link rel="icon" href="/assets/images/utilityape.png" />
 			</Head>
 
 			<Navbar />

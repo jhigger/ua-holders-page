@@ -46,7 +46,8 @@ const CTA = () => {
 					<div className="mx-auto my-0 h-1 w-1/6 rounded-t bg-white py-0 opacity-25"></div>
 				</div>
 				<h3 className="my-4 text-3xl leading-tight">
-					Leading Engage-To-Earn and Social Web3 Tools
+					Leading <br />
+					Engage-To-Earn and Social Web3 Tools
 				</h3>
 				<button className="focus:shadow-outline mx-auto my-6 transform rounded-full rounded-tr-none bg-white  py-4 px-8 font-bold text-gray-800 shadow-lg transition duration-300 ease-in-out hover:rounded-bl-none hover:rounded-tr-full hover:bg-black hover:text-white focus:outline-none lg:mx-0">
 					Demo

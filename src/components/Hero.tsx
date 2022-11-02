@@ -14,37 +14,36 @@ const Hero = () => {
 
 	return (
 		<>
-			<div className="pt-32">
-				<div className="container mx-auto flex flex-col flex-wrap items-center px-8 md:flex-row">
-					<div className="flex w-full flex-col items-start justify-center text-center md:w-3/5 md:text-left">
-						<h1 className="my-4 text-5xl font-bold leading-tight md:text-6xl">
-							Utility Ape is building{" "}
-							<div className="min-h-max text-5xl text-black md:text-6xl">
-								{"> "}
-								<Typewriter words={words} loop cursor />
-							</div>
-						</h1>
-						<p className="mb-8 text-xl leading-normal">
-							#1 Community growth tools in the space!
-						</p>
-						<button className="focus:shadow-outline mx-auto my-6 transform rounded-full rounded-tr-none bg-white  py-4 px-8 font-bold text-gray-800 shadow-lg transition duration-300 ease-in-out hover:rounded-bl-none hover:rounded-tr-full hover:bg-black hover:text-white focus:outline-none lg:mx-0">
-							Demo
-						</button>
-					</div>
-					<div className="flex w-full justify-center py-6 md:w-2/5">
-						<Image
-							priority
-							loading="eager"
-							className="w-full rounded-3xl p-4 shadow-2xl md:w-full"
-							src="/assets/images/Gen2APE4.png"
-							alt="ape"
-							width={600}
-							height={600}
-						/>
-					</div>
+			<div className="container mx-auto flex flex-col flex-wrap items-center px-8 pt-32 md:flex-row lg:px-12">
+				<div className="flex w-full flex-col items-start justify-center text-center md:w-3/5 md:text-left">
+					<h1 className="my-4 text-5xl font-bold leading-tight xl:text-6xl">
+						Utility APE is building
+						<br />
+						<div className="min-h-max pt-4 text-5xl leading-tight text-black xl:text-6xl">
+							{"> "}
+							<Typewriter words={words} loop cursor />
+						</div>
+					</h1>
+					<p className="mb-8 text-xl leading-normal">
+						#1 Community growth tools in the space!
+					</p>
+					<button className="focus:shadow-outline mx-auto my-6 transform rounded-full rounded-tr-none bg-white  py-4 px-8 font-bold text-gray-800 shadow-lg transition duration-300 ease-in-out hover:rounded-bl-none hover:rounded-tr-full hover:bg-black hover:text-white focus:outline-none lg:mx-0">
+						Demo
+					</button>
+				</div>
+				<div className="flex w-full justify-center py-6 px-4 md:w-2/5">
+					<Image
+						priority
+						loading="eager"
+						className="w-full rounded-3xl p-4 shadow-2xl md:w-full"
+						src="/assets/images/Gen2APE4.png"
+						alt="ape"
+						width={600}
+						height={600}
+					/>
 				</div>
 			</div>
-			<div className="relative -mt-12 lg:-mt-24">
+			<div className="relative lg:-mt-16">
 				<svg
 					viewBox="0 0 1428 174"
 					version="1.1"

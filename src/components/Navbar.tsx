@@ -72,7 +72,7 @@ const Navbar = () => {
 						width={32}
 						height={32}
 					/>
-					Utility Ape
+					Utility APE
 				</a>
 				<div className="block pr-4 lg:hidden">
 					<button

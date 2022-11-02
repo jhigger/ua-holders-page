@@ -1,6 +1,9 @@
 const Table = () => {
 	return (
-		<section id="table" className="bg-white px-2 py-8 text-black lg:px-28">
+		<section
+			id="table"
+			className="bg-white px-2 py-8 text-gray-800 lg:px-28"
+		>
 			<h2 className="mb-4 w-full text-center text-5xl font-bold leading-tight text-gray-800">
 				Table
 			</h2>

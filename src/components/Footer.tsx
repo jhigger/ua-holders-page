@@ -1,16 +1,17 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
+
 const Footer = () => {
 	return (
-		<footer className="bg-black">
+		<footer className="bg-black font-poppins">
 			<div className="container mx-auto px-8">
 				<div className="flex w-full flex-col py-6 md:flex-row">
 					<div className="mb-6 flex-1 text-white">
-						<a
-							className="text-2xl font-bold text-purple-600 no-underline hover:no-underline lg:text-4xl"
-							href="#"
-						>
-							<img src="/assets/images/logo.png" alt="logo" />
-						</a>
+						<Image
+							src="/assets/images/logo.png"
+							alt="logo"
+							width={163}
+							height={40}
+						/>
 					</div>
 					<div className="flex-1">
 						<p className="uppercase text-gray-300 md:mb-6">Links</p>

@@ -23,7 +23,7 @@ const FAQ = () => {
 	return (
 		<section
 			id="faqs"
-			className="bg-white py-16 px-8 leading-relaxed lg:px-8 -mb-1"
+			className="-mb-[1px] bg-white py-16 px-8 leading-relaxed lg:px-8"
 		>
 			<div className="space-y-3 text-center">
 				<h1 className="text-3xl font-semibold text-gray-800">
@@ -31,7 +31,16 @@ const FAQ = () => {
 				</h1>
 				<p className="mx-auto max-w-lg text-lg text-gray-600">
 					Answered all frequently asked questions, Still confused?
-					feel free to contact us.
+					feel free to contact us{" "}
+					<a
+						className="text-indigo-500 underline"
+						href="https://discord.com/invite/utilityape"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						here
+					</a>
+					.
 				</p>
 			</div>
 			<div className="mx-auto mt-14 max-w-2xl">
@@ -60,7 +69,7 @@ const FaqsCard = (props: { item: { q: string; a: string } }) => {
 			className="mt-5 space-y-3 overflow-hidden border-b"
 			onClick={handleOpenAnswer}
 		>
-			<h4 className="flex cursor-pointer items-center justify-between py-4 text-lg font-medium text-gray-700">
+			<h4 className="flex cursor-pointer items-center justify-between py-4 text-lg font-medium text-gray-800">
 				{item.q}
 				{state ? (
 					<svg

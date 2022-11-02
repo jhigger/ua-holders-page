@@ -13,9 +13,9 @@ const Team = () => {
 				<Image
 					src="/assets/images/team.jpg"
 					alt="team"
-					width={1280}
-					height={720}
-					className="rounded-xl px-8"
+					width={1337}
+					height={752}
+					className="rounded-3xl"
 				/>
 			</div>
 		</section>
