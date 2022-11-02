@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import { useEffect } from "react";
 
 const Navbar = () => {
@@ -57,17 +57,20 @@ const Navbar = () => {
 	return (
 		<nav
 			id="header"
-			className="font-poppins fixed top-0 z-50 w-full text-white transition duration-300 ease-in-out"
+			className="fixed top-0 z-50 w-full font-poppins text-white transition duration-300 ease-in-out"
 		>
 			<div className="container mx-auto mt-0 flex w-full flex-wrap items-center justify-between p-4">
 				<a
 					className="toggleColour flex items-center gap-4 text-2xl font-bold text-white no-underline hover:no-underline lg:text-4xl"
 					href=""
 				>
-					<img
-						className="inline h-8 fill-current"
-						src="assets/images/utilityape.png"
-						alt=""
+					<Image
+						priority
+						loading="eager"
+						src="/assets/images/utilityape.png"
+						alt="icon"
+						width={32}
+						height={32}
 					/>
 					Utility Ape
 				</a>
