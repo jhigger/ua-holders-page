@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Team = () => {
 	return (
-		<section id="about" className="bg-black p-16 text-white">
+		<section id="about" className="bg-black py-16 px-8 text-white">
 			<div className="container mx-auto flex flex-col items-center justify-center">
 				<h2 className="my-2 w-full text-center text-5xl font-bold leading-tight">
 					About the UA team

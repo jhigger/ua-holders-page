@@ -23,7 +23,7 @@ const FAQ = () => {
 	return (
 		<section
 			id="faqs"
-			className="bg-white py-16 px-4 leading-relaxed lg:px-8 -mb-1"
+			className="bg-white py-16 px-8 leading-relaxed lg:px-8 -mb-1"
 		>
 			<div className="space-y-3 text-center">
 				<h1 className="text-3xl font-semibold text-gray-800">

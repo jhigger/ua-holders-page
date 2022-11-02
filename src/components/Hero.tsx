@@ -15,11 +15,11 @@ const Hero = () => {
 	return (
 		<>
 			<div className="pt-32">
-				<div className="container mx-auto flex flex-col flex-wrap items-center px-16 md:flex-row">
+				<div className="container mx-auto flex flex-col flex-wrap items-center px-8 md:flex-row">
 					<div className="flex w-full flex-col items-start justify-center text-center md:w-3/5 md:text-left">
-						<h1 className="my-4 text-6xl font-bold leading-tight">
+						<h1 className="my-4 text-5xl font-bold leading-tight md:text-6xl">
 							Utility Ape is building{" "}
-							<div className="min-h-max text-black">
+							<div className="min-h-max text-5xl text-black md:text-6xl">
 								{"> "}
 								<Typewriter words={words} loop cursor />
 							</div>
@@ -33,6 +33,7 @@ const Hero = () => {
 					</div>
 					<div className="flex w-full justify-center py-6 md:w-2/5">
 						<Image
+							priority
 							loading="eager"
 							className="w-full rounded-3xl p-4 shadow-2xl md:w-full"
 							src="/assets/images/Gen2APE4.png"
