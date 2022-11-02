@@ -33,6 +33,7 @@ const Hero = () => {
 					</div>
 					<div className="flex w-full justify-center py-6 md:w-2/5">
 						<Image
+							loading="eager"
 							className="w-full rounded-3xl p-4 shadow-2xl md:w-full"
 							src="/assets/images/Gen2APE4.png"
 							alt="ape"
