@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+.gradient {
+	background: linear-gradient(to right, #c12dd1, #6d8cf8);
+}
