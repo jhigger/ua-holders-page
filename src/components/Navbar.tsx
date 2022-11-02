@@ -21,7 +21,7 @@ const Navbar = () => {
 			/*Apply classes for slide in bar*/
 			scrollpos = window.scrollY;
 
-			if (scrollpos > 10) {
+			if (scrollpos > 20) {
 				header?.classList.add("bg-black");
 				navaction?.classList.remove("bg-white");
 				navaction?.classList.add("gradient");
