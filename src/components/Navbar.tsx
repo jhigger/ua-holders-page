@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect } from "react";
 
 const Navbar = () => {
@@ -60,20 +61,19 @@ const Navbar = () => {
 			className="fixed top-0 z-50 w-full font-poppins text-white transition duration-300 ease-in-out"
 		>
 			<div className="container mx-auto mt-0 flex w-full flex-wrap items-center justify-between p-4">
-				<a
-					className="toggleColour flex items-center gap-4 text-2xl font-bold text-white no-underline hover:no-underline lg:text-4xl"
-					href=""
-				>
-					<Image
-						priority
-						loading="eager"
-						src="/assets/images/utilityape.png"
-						alt="icon"
-						width={32}
-						height={32}
-					/>
-					Utility APE
-				</a>
+				<Link href="/">
+					<div className="toggleColour flex items-center gap-4 text-2xl font-bold text-white no-underline hover:no-underline lg:text-4xl">
+						<Image
+							priority
+							loading="eager"
+							src="/assets/images/utilityape.png"
+							alt="icon"
+							width={32}
+							height={32}
+						/>
+						Utility APE
+					</div>
+				</Link>
 				<div className="block pr-4 lg:hidden">
 					<button
 						id="nav-toggle"
