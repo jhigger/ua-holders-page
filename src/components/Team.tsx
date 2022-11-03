@@ -4,7 +4,7 @@ const Team = () => {
 	return (
 		<section id="about" className="bg-black py-16 px-8 text-white">
 			<div className="container mx-auto flex flex-col items-center justify-center">
-				<h2 className="my-2 w-full text-center text-5xl font-bold leading-tight">
+				<h2 className="my-2 w-full text-center text-3xl font-bold leading-tight lg:text-5xl">
 					About the UA team
 				</h2>
 				<div className="mb-16 w-full">

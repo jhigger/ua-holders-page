@@ -23,12 +23,12 @@ const Benefits = () => {
 	];
 
 	return (
-		<section id="benefits" className="-mt-[1px] bg-white py-8">
-			<div className="container mx-auto flex flex-wrap px-8 py-4">
-				<p className="my-2 w-full text-center text-xl font-bold leading-tight text-gray-800">
+		<section id="benefits" className="-mt-[1px] bg-white px-4 py-8">
+			<div className="container mx-auto flex flex-wrap">
+				<p className="my-2 w-full text-center text-xl font-semibold leading-tight text-gray-800">
 					Utility Ape Holders
 				</p>
-				<h2 className="my-2 w-full text-center text-5xl font-bold leading-tight text-gray-800">
+				<h2 className="my-2 w-full text-center text-3xl font-bold leading-tight text-gray-800 lg:text-5xl">
 					Benefits for <br /> holding a GEN 2?
 				</h2>
 				<p className="my-2 w-full text-center text-2xl leading-tight text-gray-800">

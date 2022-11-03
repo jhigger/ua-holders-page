@@ -4,7 +4,7 @@ const Table = () => {
 			id="table"
 			className="bg-white px-2 py-8 text-gray-800 lg:px-28"
 		>
-			<h2 className="mb-4 w-full text-center text-5xl font-bold leading-tight text-gray-800">
+			<h2 className="mb-4 w-full text-center text-3xl font-bold leading-tight text-gray-800 lg:text-5xl">
 				Table
 			</h2>
 			<div className="mb-16 w-full">

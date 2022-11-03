@@ -26,10 +26,10 @@ const FAQ = () => {
 			className="-mb-[1px] bg-white py-16 px-8 leading-relaxed lg:px-8"
 		>
 			<div className="space-y-3 text-center">
-				<h2 className="text-3xl font-semibold text-gray-800">
+				<h2 className="text-3xl font-semibold text-gray-800 lg:text-5xl">
 					Frequently Asked Questions
 				</h2>
-				<p className="mx-auto max-w-lg text-lg text-gray-600">
+				<p className="mx-auto max-w-lg text-xl text-gray-600">
 					Answered all frequently asked questions, Still confused?
 					feel free to ask in our{" "}
 					<a

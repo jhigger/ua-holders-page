@@ -16,10 +16,10 @@ const Hero = () => {
 		<>
 			<div className="container mx-auto flex flex-col flex-wrap items-center px-8 pt-32 md:flex-row lg:px-12">
 				<div className="flex w-full flex-col items-start justify-center text-center md:w-3/5 md:text-left">
-					<h1 className="my-4 text-5xl font-bold leading-tight xl:text-6xl">
+					<h1 className="my-4 text-4xl font-bold leading-tight lg:text-5xl">
 						Utility APE is building
 						<br />
-						<div className="min-h-max pt-4 text-5xl leading-tight text-black xl:text-6xl">
+						<div className="min-h-max pt-4 leading-tight text-black">
 							{"> "}
 							<Typewriter words={words} loop cursor />
 						</div>

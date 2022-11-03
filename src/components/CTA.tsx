@@ -41,13 +41,13 @@ const CTA = () => {
 				</g>
 			</svg>
 			<section className="container mx-auto py-16 px-8 text-center">
-				<h2 className="my-2 w-full text-center text-5xl font-bold leading-tight text-white">
+				<h2 className="my-2 w-full text-center text-3xl font-bold leading-tight text-white lg:text-5xl">
 					Try Our Demo
 				</h2>
 				<div className="mb-4 w-full">
 					<div className="mx-auto my-0 h-1 w-1/6 rounded-t bg-white py-0 opacity-25"></div>
 				</div>
-				<h3 className="my-4 text-3xl leading-tight">
+				<h3 className="my-4 text-xl leading-tight lg:text-3xl">
 					Leading <br />
 					Engage-To-Earn and Social Web3 Tools
 				</h3>

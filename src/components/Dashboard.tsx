@@ -2,10 +2,10 @@ const Dashboard = () => {
 	return (
 		<section id="dashboard" className="bg-white py-16 px-8">
 			<div className="container mx-auto flex flex-col items-center justify-center">
-				<h2 className="my-2 w-full text-center text-5xl font-bold leading-tight text-gray-800">
+				<h2 className="my-2 w-full text-center text-3xl font-bold leading-tight text-gray-800 lg:text-5xl">
 					Dashboard coming soon for holders
 				</h2>
-				<p className="my-2 w-full text-center text-2xl leading-tight text-gray-800">
+				<p className="my-2 w-full text-center text-xl leading-tight text-gray-600">
 					Dashboard will cater to multiple tools provided to our
 					holders, <br /> including NFT tools, sniper tools, insights,
 					and more
