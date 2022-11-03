@@ -54,7 +54,7 @@ const Navbar = () => {
 
 		scrollpos > 20 || state ? dark() : light();
 
-		document.addEventListener("scroll", function () {
+		const handleScroll = () => {
 			/*Apply classes for slide in bar*/
 			scrollpos = window.scrollY;
 
@@ -63,7 +63,13 @@ const Navbar = () => {
 			} else {
 				light();
 			}
-		});
+		};
+		
+		document.addEventListener("scroll", handleScroll);
+
+		return () => {
+			document.removeEventListener("scroll", handleScroll);
+		};
 	}, [state]);
 
 	return (
