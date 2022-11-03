@@ -109,7 +109,7 @@ const Navbar = () => {
 					</ul>
 					<button
 						id="navAction"
-						className="focus:shadow-outline mx-auto mt-4 transform rounded-full bg-white py-3 px-6 font-bold text-gray-800 shadow transition duration-300 ease-in-out hover:bg-black hover:text-white focus:outline-none lg:mx-0 lg:mt-0"
+						className="focus:shadow-outline mx-auto mt-4 transform rounded-full bg-white py-3 px-6 font-bold text-gray-800 shadow transition duration-300 ease-in-out hover:bg-black hover:text-white active:scale-75 lg:mx-0 lg:mt-0"
 					>
 						Demo
 					</button>

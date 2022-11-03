@@ -27,9 +27,7 @@ const Hero = () => {
 					<p className="mb-8 text-xl leading-normal">
 						#1 Community growth tools in the space!
 					</p>
-					<button className="focus:shadow-outline mx-auto my-6 transform rounded-full rounded-tr-none bg-white  py-4 px-8 font-bold text-gray-800 shadow-lg transition duration-300 ease-in-out hover:rounded-bl-none hover:rounded-tr-full hover:bg-black hover:text-white focus:outline-none lg:mx-0">
-						Demo
-					</button>
+					<DemoButton />
 				</div>
 				<div className="flex w-full justify-center py-6 px-4 md:w-2/5">
 					<Image
@@ -86,6 +84,14 @@ const Hero = () => {
 				</svg>
 			</div>
 		</>
+	);
+};
+
+export const DemoButton = () => {
+	return (
+		<button className="focus:shadow-outline mx-auto my-6 transform rounded-full rounded-tr-none bg-white py-4 px-8 font-bold text-gray-800 shadow-lg transition duration-75 ease-in-out hover:rounded-bl-none hover:rounded-tr-full hover:bg-black hover:text-white active:scale-75 lg:mx-0">
+			Demo
+		</button>
 	);
 };
 
