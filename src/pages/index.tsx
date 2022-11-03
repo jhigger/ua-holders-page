@@ -1,10 +1,9 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import BackToTop from "../components/BackToTop";
-import Banner from "../components/Banner";
+import Dashboard from "../components/Dashboard";
 import Benefits from "../components/Benefits";
 import CTA from "../components/CTA";
-import Dashboard from "../components/Dashboard";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
@@ -29,7 +28,6 @@ const Home: NextPage = () => {
 				<Hero />
 				<Benefits />
 				<Table />
-				<Banner />
 				<Dashboard />
 				<Team />
 				<FAQ />
