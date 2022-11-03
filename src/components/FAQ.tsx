@@ -26,19 +26,19 @@ const FAQ = () => {
 			className="-mb-[1px] bg-white py-16 px-8 leading-relaxed lg:px-8"
 		>
 			<div className="space-y-3 text-center">
-				<h1 className="text-3xl font-semibold text-gray-800">
+				<h2 className="text-3xl font-semibold text-gray-800">
 					Frequently Asked Questions
-				</h1>
+				</h2>
 				<p className="mx-auto max-w-lg text-lg text-gray-600">
 					Answered all frequently asked questions, Still confused?
-					feel free to contact us{" "}
+					feel free to ask in our{" "}
 					<a
-						className="text-indigo-500 underline"
+						className="text-indigo-600 underline"
 						href="https://discord.com/invite/utilityape"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						here
+						Discord Server
 					</a>
 					.
 				</p>
@@ -69,7 +69,7 @@ const FaqsCard = (props: { item: { q: string; a: string } }) => {
 			className="mt-5 space-y-3 overflow-hidden border-b"
 			onClick={handleOpenAnswer}
 		>
-			<h4 className="flex cursor-pointer items-center justify-between py-4 text-lg font-medium text-gray-800">
+			<h3 className="flex cursor-pointer items-center justify-between py-4 text-lg font-medium text-gray-800">
 				{item.q}
 				{state ? (
 					<svg
@@ -102,7 +102,7 @@ const FaqsCard = (props: { item: { q: string; a: string } }) => {
 						/>
 					</svg>
 				)}
-			</h4>
+			</h3>
 			<div
 				className="duration-300"
 				style={state ? { height: answerH } : { height: "0px" }}

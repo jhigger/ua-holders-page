@@ -21,7 +21,7 @@ const Footer = () => {
 									href="https://utilityape.com/"
 									target="_blank"
 									rel="noreferrer"
-									className="text-gray-500 no-underline hover:text-indigo-500 hover:underline"
+									className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"
 								>
 									UA Home
 								</a>
@@ -31,7 +31,7 @@ const Footer = () => {
 									href="https://demo.utilityape.com/"
 									target="_blank"
 									rel="noreferrer"
-									className="text-gray-500 no-underline hover:text-indigo-500 hover:underline"
+									className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"
 								>
 									Demo
 								</a>
@@ -41,7 +41,7 @@ const Footer = () => {
 									href="https://kairos-ua-landing-page.vercel.app/"
 									target="_blank"
 									rel="noreferrer"
-									className="text-gray-500 no-underline hover:text-indigo-500 hover:underline"
+									className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"
 								>
 									Client
 								</a>
@@ -58,7 +58,7 @@ const Footer = () => {
 									href="https://discord.com/invite/utilityape"
 									target="_blank"
 									rel="noreferrer"
-									className="text-gray-500 no-underline hover:text-indigo-500 hover:underline"
+									className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"
 								>
 									Discord
 								</a>
@@ -68,7 +68,7 @@ const Footer = () => {
 									href="https://twitter.com/utilityapeNFT"
 									target="_blank"
 									rel="noreferrer"
-									className="text-gray-500 no-underline hover:text-indigo-500 hover:underline"
+									className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"
 								>
 									Twitter
 								</a>
@@ -85,7 +85,7 @@ const Footer = () => {
 									href="https://utility-ape.gitbook.io/utility-ape-whitepaper/"
 									target="_blank"
 									rel="noreferrer"
-									className="text-gray-500 no-underline hover:text-indigo-500 hover:underline"
+									className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"
 								>
 									Whitepaper
 								</a>
