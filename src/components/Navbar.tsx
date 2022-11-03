@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+	const [state, setState] = useState(false);
 	const links = [
 		{ href: "#benefits", text: "Benefits" },
 		{ href: "#table", text: "Table" },
@@ -16,44 +17,54 @@ const Navbar = () => {
 		const header = document.getElementById("header");
 		const navcontent = document.getElementById("nav-content");
 		const navaction = document.getElementById("navAction");
-		// const toToggle = document.querySelectorAll(".toggleColour");
+		const toToggle = document.querySelectorAll(".toggleColour");
+
+		const dark = () => {
+			header?.classList.add("bg-black");
+			navaction?.classList.remove("bg-white");
+			navaction?.classList.add("gradient");
+			navaction?.classList.remove("text-gray-800");
+			navaction?.classList.add("text-white");
+			//Use to switch toggleColour colours
+			for (let i = 0; i < toToggle.length; i++) {
+				toToggle[i]?.classList.remove("text-gray-800");
+				toToggle[i]?.classList.add("text-white");
+			}
+			header?.classList.add("shadow");
+			navcontent?.classList.remove("bg-gray-100");
+			navcontent?.classList.add("bg-white");
+		};
+
+		const light = () => {
+			header?.classList.remove("bg-black");
+			navaction?.classList.remove("gradient");
+			navaction?.classList.add("bg-white");
+			navaction?.classList.remove("text-white");
+			navaction?.classList.add("text-gray-800");
+			//Use to switch toggleColour colours
+			for (let i = 0; i < toToggle.length; i++) {
+				toToggle[i]?.classList.remove("text-white");
+				toToggle[i]?.classList.add("text-gray-800");
+			}
+
+			header?.classList.remove("shadow");
+			navcontent?.classList.remove("bg-white");
+			navcontent?.classList.add("bg-gray-100");
+		};
+
+		scrollpos > 20 || state ? dark() : light();
 
 		document.addEventListener("scroll", function () {
 			/*Apply classes for slide in bar*/
 			scrollpos = window.scrollY;
 
-			if (scrollpos > 20) {
-				header?.classList.add("bg-black");
-				navaction?.classList.remove("bg-white");
-				navaction?.classList.add("gradient");
-				navaction?.classList.remove("text-gray-800");
-				navaction?.classList.add("text-white");
-				//Use to switch toggleColour colours
-				// for (let i = 0; i < toToggle.length; i++) {
-				// 	toToggle[i]?.classList.remove("text-gray-800");
-				// 	toToggle[i]?.classList.add("text-white");
-				// }
-				header?.classList.add("shadow");
-				navcontent?.classList.remove("bg-gray-100");
-				navcontent?.classList.add("bg-white");
+			if (scrollpos > 20 || state) {
+				dark();
 			} else {
-				header?.classList.remove("bg-black");
-				navaction?.classList.remove("gradient");
-				navaction?.classList.add("bg-white");
-				navaction?.classList.remove("text-white");
-				navaction?.classList.add("text-gray-800");
-				//Use to switch toggleColour colours
-				// for (let i = 0; i < toToggle.length; i++) {
-				// 	toToggle[i]?.classList.remove("text-white");
-				// 	toToggle[i]?.classList.add("text-gray-800");
-				// }
-
-				header?.classList.remove("shadow");
-				navcontent?.classList.remove("bg-white");
-				navcontent?.classList.add("bg-gray-100");
+				light();
 			}
 		});
-	}, []);
+	}, [state]);
 
 	return (
 		<nav
@@ -74,26 +85,21 @@ const Navbar = () => {
 						Utility APE
 					</div>
 				</Link>
-				<div className="block pr-4 lg:hidden">
+				<div className="block pr-4 md:hidden">
 					<button
 						id="nav-toggle"
-						className="focus:shadow-outline flex transform items-center p-1 text-pink-800 transition duration-300 ease-in-out hover:scale-105 hover:text-gray-900 focus:outline-none"
+						className="focus:shadow-outline flex transform items-center p-1 text-white transition duration-300 ease-in-out hover:scale-105 hover:text-gray-900 focus:outline-none"
+						onClick={() => setState(!state)}
 					>
-						<svg
-							className="h-6 w-6 fill-current"
-							viewBox="0 0 20 20"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<title>Menu</title>
-							<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-						</svg>
+						{state ? <CloseIcon /> : <MenuIcon />}
 					</button>
 				</div>
 				<div
-					className="z-20 mt-2 hidden w-full flex-grow bg-white p-4 text-black lg:mt-0 lg:flex lg:w-auto lg:items-center lg:bg-transparent lg:p-0"
-					id="nav-content"
+					className={`z-20 mt-8 w-full flex-grow p-4 md:mt-0 md:flex md:w-auto md:items-center md:bg-transparent md:p-0 ${
+						state ? "block" : "hidden"
+					}`}
 				>
-					<ul className="flex-1 items-center justify-center pr-12 lg:flex">
+					<ul className="flex-1 items-center justify-center md:flex lg:pr-12">
 						{links.map((link, idx) => {
 							return (
 								<li key={idx} className="mr-3">
@@ -109,7 +115,7 @@ const Navbar = () => {
 					</ul>
 					<button
 						id="navAction"
-						className="focus:shadow-outline mx-auto mt-4 transform rounded-full bg-white py-3 px-6 font-bold text-gray-800 shadow transition duration-300 ease-in-out hover:bg-black hover:text-white active:scale-75 lg:mx-0 lg:mt-0"
+						className="focus:shadow-outline mx-auto hidden transform rounded-full bg-white py-3 px-6 font-bold text-gray-800 shadow transition duration-75 ease-in-out hover:bg-black hover:text-white active:scale-75 lg:mx-0 lg:block"
 					>
 						Demo
 					</button>
@@ -117,6 +123,42 @@ const Navbar = () => {
 			</div>
 			<hr className="my-0 border-b border-gray-100 py-0 opacity-25" />
 		</nav>
+	);
+};
+
+const CloseIcon = () => {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			className="h-6 w-6"
+			viewBox="0 0 20 20"
+			fill="currentColor"
+		>
+			<path
+				fillRule="evenodd"
+				d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+				clipRule="evenodd"
+			/>
+		</svg>
+	);
+};
+
+const MenuIcon = () => {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			className="h-6 w-6"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke="currentColor"
+		>
+			<path
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				strokeWidth={2}
+				d="M4 8h16M4 16h16"
+			/>
+		</svg>
 	);
 };
 
