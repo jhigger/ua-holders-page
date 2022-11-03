@@ -53,6 +53,12 @@ const Table = () => {
 					<Cell>&#10004;</Cell>
 					<Cell>&#10004;</Cell>
 				</>
+				<>
+					<Cell>Token Staking</Cell>
+					<Cell>&#x2717;</Cell>
+					<Cell>&#10004;</Cell>
+					<Cell>&#x2717;</Cell>
+				</>
 				{/* -----------------*/}
 				<>
 					<Cell>Engage to Earn</Cell>
@@ -96,8 +102,24 @@ const Table = () => {
 				</>
 				<>
 					<Cell>Airdrop</Cell>
-					<Cell>10 day staking required</Cell>
-					<Cell>6 day staking required</Cell>
+					<Cell>N/A</Cell>
+					<div className="col-span-3 grid h-full w-full grid-rows-2">
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+							Common - 12 days
+						</div>
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+							Uncommon - 9 days
+						</div>
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+							Rare - 6 days
+						</div>
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+							Elite - 4 days
+						</div>
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+							Legendary - 3 days
+						</div>
+					</div>
 					<Cell>N/A</Cell>
 				</>
 				<>
