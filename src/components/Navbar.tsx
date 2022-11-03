@@ -64,7 +64,7 @@ const Navbar = () => {
 				light();
 			}
 		};
-		
+
 		document.addEventListener("scroll", handleScroll);
 
 		return () => {
@@ -119,12 +119,18 @@ const Navbar = () => {
 							);
 						})}
 					</ul>
-					<button
-						id="navAction"
-						className="focus:shadow-outline mx-auto hidden transform rounded-full bg-white py-3 px-6 font-bold text-gray-800 shadow transition duration-75 ease-in-out hover:bg-black hover:text-white active:scale-75 lg:mx-0 lg:block"
+					<a
+						href="https://discord.gg/hT3hYvdy"
+						target="_blank"
+						rel="noreferrer"
 					>
-						Demo
-					</button>
+						<button
+							id="navAction"
+							className="focus:shadow-outline mx-auto hidden transform rounded-full bg-white py-3 px-6 font-bold text-gray-800 shadow transition duration-75 ease-in-out hover:bg-black hover:text-white active:scale-75 lg:mx-0 lg:block"
+						>
+							Demo
+						</button>
+					</a>
 				</div>
 			</div>
 			<hr className="my-0 border-b border-gray-100 py-0 opacity-25" />
