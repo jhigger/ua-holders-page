@@ -40,7 +40,7 @@ const Navbar = () => {
 			navaction?.classList.remove("gradient");
 			navaction?.classList.add("bg-white");
 			navaction?.classList.remove("text-white");
-			navaction?.classList.add("text-gray-800");
+			navaction?.classList.add("text-white");
 			//Use to switch toggleColour colours
 			for (let i = 0; i < toToggle.length; i++) {
 				toToggle[i]?.classList.remove("text-white");
@@ -110,7 +110,7 @@ const Navbar = () => {
 							return (
 								<li key={idx} className="mr-3">
 									<a
-										className="toggleColour inline-block py-2 px-4 font-bold text-white no-underline"
+										className="toggleColour inline-block py-2 px-4 text-lg font-bold text-white no-underline"
 										href={link.href}
 									>
 										{link.text}
@@ -126,7 +126,7 @@ const Navbar = () => {
 					>
 						<button
 							id="navAction"
-							className="focus:shadow-outline mx-auto hidden transform rounded-full bg-white py-3 px-6 font-bold text-gray-800 shadow transition duration-75 ease-in-out hover:bg-black hover:text-white active:scale-75 lg:mx-0 lg:block"
+							className="focus:shadow-outline mx-auto hidden transform rounded-full bg-black py-3 px-6 font-bold text-white shadow transition duration-75 ease-in-out hover:bg-white hover:text-black active:scale-75 lg:mx-0 lg:block"
 						>
 							Demo
 						</button>
