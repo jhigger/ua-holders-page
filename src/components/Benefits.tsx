@@ -3,22 +3,32 @@ const Benefits = () => {
 		{
 			heading: "UA Token",
 			content:
-				"We'll be developing a token for our holders where holders will earn tokens every 24 hours.",
-		},
-		{
-			heading: "Loot boxes",
-			content:
-				"You'll be able to claim a loot box and have a random chance at containing CUS, SOL, USDC, and other tokens.",
+				"We're working on the development of our token, 20% of everything we create will go towards burning/ creating an LP for the token. Aiming Q1 of 2023",
 		},
 		{
 			heading: "Automated trading",
 			content:
-				"We're producing an auto trader capable of trading automagically for you with an estimate of 80% + win rate on trades, allowing holders to profit on trading. Holders earn 20% of the fees we collect.",
+				"We're currently in production for an auto trader, capable of trading automagically for you with an estimate of 80% win rate on trades, allowing holders to profit on trading. 20% of profits made will go to the UA token.",
 		},
 		{
 			heading: "Coin Flip",
 			content:
-				"A coin flip program more powerful than most competitors in the space, holders earn 20% of the fees we collect.",
+				"A Coin Clip program more powerful than most competitors in the space, both via website AND a unique Discord based coin flip bot. 20% of the fees will go towards the UA token.",
+		},
+		{
+			heading: "Advisory & Launchpad opportunities",
+			content:
+				"We'll be offering launchpad services to other projects, 20% of what we raise will go back to the UA token. This includes art, community building, marketing help, and development work.",
+		},
+		{
+			heading: "Engage-to-earn bot services",
+			content:
+				"The shape of UA, also given back to our holders via token, 25% of what we earn will go back to the UA token.",
+		},
+		{
+			heading: "Additional development",
+			content:
+				"We're working on further development for our holders, to benefit the value of the token and also benefit the Utility usage for our holders.",
 		},
 	];
 
