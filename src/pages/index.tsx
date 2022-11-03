@@ -16,7 +16,7 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<Head>
-				<title>Utility Ape | Holders</title>
+				<title>Utility APE | Holders</title>
 				<meta
 					name="description"
 					content="Community, Utility, and Security for the Solana ecosystem through our advanced Discord bots & web3 integrations."
