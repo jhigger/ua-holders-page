@@ -10,7 +10,7 @@ const Table = () => {
 			<div className="mb-16 w-full">
 				<div className="gradient mx-auto my-0 h-1 w-64 rounded-t py-0 opacity-25"></div>
 			</div>
-			<div className="container mx-auto grid grid-cols-12 place-items-center border">
+			<div className="container mx-auto grid grid-cols-12 place-items-center border text-xs sm:text-base">
 				<>
 					<Cell />
 					<Cell>
@@ -59,23 +59,41 @@ const Table = () => {
 					<Cell>&#10004;</Cell>
 					<Cell>&#x2717;</Cell>
 				</>
+				<>
+					<Cell>Deflationary</Cell>
+					<Cell>&#10004;</Cell>
+					<Cell>&#10004;</Cell>
+					<Cell>&#10004;</Cell>
+				</>
 				{/* -----------------*/}
 				<>
 					<Cell>Engage to Earn</Cell>
 					<div className="col-span-3 grid h-full w-full grid-rows-2">
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
-							100% uncommon / common
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
+							Common - 100%
 						</div>
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
-							110% rare / elite
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
+							Uncommon - 100%
+						</div>
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
+							Rare - 110%
+						</div>
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
+							Elite - 110%
 						</div>
 					</div>
 					<div className="col-span-3 grid h-full w-full grid-rows-2">
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
-							120% uncommon / common
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
+							Common - 120%
 						</div>
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
-							130% rare / elite
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
+							Uncommon - 120%
+						</div>
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
+							Rare - 130%
+						</div>
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
+							Elite - 130%
 						</div>
 					</div>
 					<Cell>75%</Cell>
@@ -83,18 +101,18 @@ const Table = () => {
 				<>
 					<Cell>Client Discount</Cell>
 					<div className="col-span-3 grid h-full w-full grid-rows-2">
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							5% common / uncommon
 						</div>
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							12% rare / elite
 						</div>
 					</div>
 					<div className="col-span-3 grid h-full w-full grid-rows-2">
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							10% common / uncommon
 						</div>
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							20% rare / elite
 						</div>
 					</div>
@@ -104,19 +122,19 @@ const Table = () => {
 					<Cell>Airdrop</Cell>
 					<Cell>N/A</Cell>
 					<div className="col-span-3 grid h-full w-full grid-rows-2">
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							Common - 12 days
 						</div>
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							Uncommon - 9 days
 						</div>
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							Rare - 6 days
 						</div>
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							Elite - 4 days
 						</div>
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							Legendary - 3 days
 						</div>
 					</div>
@@ -141,7 +159,7 @@ const Table = () => {
 
 const Cell = ({ children }: { children?: JSX.Element | string | null }) => {
 	return (
-		<div className="col-span-3 flex h-full w-full items-center justify-center border p-1 text-center lg:p-4">
+		<div className="col-span-3 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 			{children}
 		</div>
 	);
