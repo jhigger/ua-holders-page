@@ -30,6 +30,11 @@ const Benefits = () => {
 			content:
 				"We're working on further development for our holders, to benefit the value of the token and also benefit the Utility usage for our holders.",
 		},
+		{
+			heading: "1:1 Honorary Art",
+			content:
+				"All Honorary art will be auctioned, 20% of those funds will be added to the UA Token.",
+		},
 	];
 
 	return (
