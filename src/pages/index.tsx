@@ -11,6 +11,7 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Table from "../components/Table";
 import Team from "../components/Team";
+import Testimonials from "../components/Testimonials";
 
 const Home: NextPage = () => {
 	return (
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
 				<Dashboard />
 				<Team />
 				<Collections />
+				<Testimonials />
 				<FAQ />
 				<CTA />
 				<BackToTop />
