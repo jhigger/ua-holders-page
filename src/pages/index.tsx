@@ -1,9 +1,10 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import BackToTop from "../components/BackToTop";
-import Dashboard from "../components/Dashboard";
 import Benefits from "../components/Benefits";
+import Collections from "../components/Collections";
 import CTA from "../components/CTA";
+import Dashboard from "../components/Dashboard";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
 				<Table />
 				<Dashboard />
 				<Team />
+				<Collections />
 				<FAQ />
 				<CTA />
 				<BackToTop />
