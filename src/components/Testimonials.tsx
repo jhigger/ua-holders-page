@@ -25,7 +25,7 @@ const Testimonials = () => {
 	];
 
 	return (
-		<section id="benefits" className="-mt-[1px] bg-transparent px-4 py-8">
+		<section id="testimonials" className="-mt-[1px] bg-transparent px-4 py-8">
 			<div className="container mx-auto flex flex-wrap">
 				<p className="my-2 w-full text-center text-xl font-semibold leading-tight text-white">
 					Stats and Client Feedback
