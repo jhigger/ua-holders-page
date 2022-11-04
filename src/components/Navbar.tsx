@@ -93,7 +93,7 @@ const Navbar = () => {
 						Utility APE
 					</div>
 				</Link>
-				<div className="block pr-4 md:hidden">
+				<div className="block pr-4 lg:hidden">
 					<button
 						id="nav-toggle"
 						className="focus:shadow-outline flex transform items-center p-1 text-white transition duration-300 ease-in-out hover:scale-105 hover:text-gray-900 focus:outline-none"
@@ -103,11 +103,11 @@ const Navbar = () => {
 					</button>
 				</div>
 				<div
-					className={`z-20 mt-8 w-full flex-grow p-4 md:mt-0 md:flex md:w-auto md:items-center md:bg-transparent md:p-0 ${
+					className={`z-20 mt-8 w-full flex-grow p-4 lg:mt-0 lg:flex lg:w-auto lg:items-center lg:bg-transparent lg:p-0 ${
 						state ? "block" : "hidden"
 					}`}
 				>
-					<ul className="flex-1 items-center justify-center md:flex lg:pr-12">
+					<ul className="flex-1 flex-wrap items-center justify-center md:flex">
 						{links.map((link, idx) => {
 							return (
 								<li key={idx} className="mr-3">
