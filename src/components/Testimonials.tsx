@@ -17,6 +17,13 @@ const Testimonials = () => {
 		},
 	];
 
+	const statList = [
+		{ title: "visitors", stat: 866, percent: 43.9 },
+		{ title: "communicators", stat: 386, percent: 62.2 },
+		{ title: "members", stat: 773, percent: 44.2 },
+		{ title: "new member retention", stat: "27.2%", percent: 307.8 },
+	];
+
 	return (
 		<section id="benefits" className="-mt-[1px] bg-transparent px-4 py-8">
 			<div className="container mx-auto flex flex-wrap">
@@ -36,7 +43,7 @@ const Testimonials = () => {
 					{list.map((item, idx) => {
 						return (
 							<li
-								key={idx}
+								key={`testimonial-${idx}`}
 								className="flex w-full max-w-xs flex-shrink flex-grow flex-col p-6 text-center md:w-1/2 xl:w-1/4"
 							>
 								<div className="h-full flex-1 rounded-3xl bg-gray-50 p-8 shadow transition duration-300 ease-in-out hover:bg-white hover:shadow-2xl">
@@ -57,8 +64,62 @@ const Testimonials = () => {
 						);
 					})}
 				</ul>
+				<ul className="flex w-full flex-wrap justify-center">
+					{statList.map((item, idx) => {
+						return (
+							<li
+								key={`stat-${idx}`}
+								className="flex w-full max-w-xs flex-shrink flex-grow flex-col p-6 text-center md:w-1/2 xl:w-1/4"
+							>
+								<StatCard
+									title={item.title}
+									stat={item.stat}
+									percent={item.percent}
+								/>
+							</li>
+						);
+					})}
+				</ul>
 			</div>
 		</section>
+	);
+};
+
+const StatCard = ({
+	title,
+	stat,
+	percent,
+}: {
+	title: string;
+	stat: string | number;
+	percent: string | number;
+}) => {
+	return (
+		<div className="flex h-full flex-col justify-center rounded-2xl bg-white p-4 shadow-lg dark:bg-gray-800">
+			<div className="flex items-center">
+				<p className="text-md uppercase text-black dark:text-white">
+					weekly {title}
+				</p>
+			</div>
+			<div className="flex flex-col justify-start">
+				<p className="my-4 text-left text-4xl font-bold text-gray-700 dark:text-gray-100">
+					{stat}
+				</p>
+				<div className="flex items-center text-sm text-green-500">
+					<svg
+						width="20"
+						height="20"
+						fill="currentColor"
+						viewBox="0 0 1792 1792"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path d="M1408 1216q0 26-19 45t-45 19h-896q-26 0-45-19t-19-45 19-45l448-448q19-19 45-19t45 19l448 448q19 19 19 45z"></path>
+					</svg>
+					<span>{percent}% </span>
+					<span className="text-gray-400">since last week</span>
+				</div>
+			</div>
+		</div>
 	);
 };
 
