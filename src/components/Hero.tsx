@@ -34,7 +34,7 @@ const Hero = () => {
 						priority
 						loading="eager"
 						className="w-full rounded-3xl p-4 shadow-2xl md:w-full"
-						src="/assets/images/Gen2APE4.png"
+						src="/assets/images/apes/gen2_uncommon.png"
 						alt="ape"
 						width={600}
 						height={600}
