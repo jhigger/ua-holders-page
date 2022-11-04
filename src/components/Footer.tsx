@@ -28,7 +28,7 @@ const Footer = () => {
 							</li>
 							<li className="mt-2 mr-2 inline-block md:mr-0 md:block">
 								<a
-									href="https://demo.utilityape.com/"
+									href="https://discord.gg/hT3hYvdy"
 									target="_blank"
 									rel="noreferrer"
 									className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"
