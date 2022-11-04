@@ -1,17 +1,17 @@
 const Testimonials = () => {
 	const list = [
 		{
-			heading: "Bulls Head",
+			client: "Bulls Head",
 			content:
 				"It's so so well explained and the preset tools are just insanely well made.",
 		},
 		{
-			heading: "Ninja Wallet",
+			client: "Ninja Wallet",
 			content:
 				"...Im' impressed! I've been in web3 for over a year, and this is the best tool I've ever seen!",
 		},
 		{
-			heading: "Busy Boars",
+			client: "Busy Boars",
 			content:
 				"In my eyes, you have the most advanced engagement tool currently on the market.",
 		},
@@ -49,9 +49,9 @@ const Testimonials = () => {
 											”
 										</span>
 									</p>
-									<div className="mt-4 flex items-center justify-end text-sm font-bold text-indigo-500">
-										~ {item.heading}
-									</div>
+									<p className="mt-4 flex items-center justify-end text-sm font-bold text-indigo-500">
+										~ {item.client}
+									</p>
 								</div>
 							</li>
 						);
