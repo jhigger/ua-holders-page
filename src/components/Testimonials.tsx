@@ -15,7 +15,10 @@ const Testimonials = () => {
 			content:
 				"In my eyes, you have the most advanced engagement tool currently on the market.",
 		},
-		{ client: "Heavenland", content: "It's fun, best tool ever." },
+		{
+			client: "Heavenland",
+			content: "People are crazy with happy hours.. lmao best tool ever",
+		},
 	];
 
 	const statList = [
