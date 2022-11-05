@@ -74,7 +74,7 @@ const Member = ({
 				className={`object-cover object-center brightness-75 contrast-[1.05] saturate-150 ${filter}`}
 			/>
 			<div className="flex flex-col items-center justify-center gap-4 p-4">
-				<h3 className="w-full text-center text-2xl font-bold leading-tight text-white">
+				<h3 className="w-full text-center text-2xl font-bold uppercase leading-tight text-white">
 					{name}
 				</h3>
 				<p className="mx-auto w-full text-justify leading-relaxed text-white">
