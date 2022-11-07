@@ -9,6 +9,7 @@ import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
+import PayToRaid from "../components/PayToRaid";
 import Table from "../components/Table";
 import Team from "../components/Team";
 import Testimonials from "../components/Testimonials";
@@ -34,6 +35,7 @@ const Home: NextPage = () => {
 				<Team />
 				<Collections />
 				<Testimonials />
+				<PayToRaid />
 				<FAQ />
 				<CTA />
 				<BackToTop />
