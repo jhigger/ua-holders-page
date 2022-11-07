@@ -3,7 +3,7 @@ import Image from "next/image";
 const Team = () => {
 	const list = [
 		{
-			src: "/assets/images/haunt.gif",
+			src: "/assets/images/apes/haunt.gif",
 			name: "Haunt",
 			desc: "Crypto-native CEO and entrepreneur since 2015 with experience in over 20 successful project launches leading teams of 150+ and managing communities of over 1 million active followers",
 		},
