@@ -8,7 +8,7 @@ const Testimonials = () => {
 		{
 			client: "Ninja Wallet",
 			content:
-				"...Im' impressed! I've been in web3 for over a year, and this is the best tool I've ever seen!",
+				"...I'm impressed! I've been in web3 for over a year, and this is the best tool I've ever seen!",
 		},
 		{
 			client: "Busy Boars",
