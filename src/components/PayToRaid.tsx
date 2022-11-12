@@ -25,11 +25,18 @@ const PayToRaid = () => {
 							sourceType="profile"
 							screenName="ApeUtilityRaid"
 							options={{ height: 500 }}
-							// tweetLimit={10}
 							placeholder="Loading..."
 							userId={"1559396748677619713"}
 						/>
 					</div>
+					<a
+						href="https://ua-pay-to-raid.vercel.app/"
+						rel="noreferrer"
+					>
+						<button className="focus:shadow-outline my-8 mx-auto w-full max-w-xl transform rounded-full bg-black py-3 px-6 text-xl font-bold text-white shadow transition duration-75 ease-in-out hover:bg-white hover:text-black active:scale-75 lg:mx-0">
+							Buy a Raid
+						</button>
+					</a>
 				</div>
 			</div>
 		</section>
