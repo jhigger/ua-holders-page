@@ -2,10 +2,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 const PayToRaid = () => {
 	return (
-		<section
-			id="pay-to-raid"
-			className="-mt-[1px] bg-transparent px-4 py-8"
-		>
+		<section id="raid" className="-mt-[1px] bg-transparent px-4 py-8">
 			<div className="container mx-auto flex flex-wrap">
 				<p className="my-2 w-full text-center text-xl font-semibold leading-tight text-white">
 					Interested in getting your tweet raided through Utility Ape?
