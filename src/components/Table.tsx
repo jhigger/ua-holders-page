@@ -10,7 +10,7 @@ const Table = () => {
 			<div className="mb-16 w-full">
 				<div className="gradient mx-auto my-0 h-1 w-64 rounded-t py-0 opacity-25"></div>
 			</div>
-			<div className="container mx-auto grid grid-cols-12 place-items-center border text-xs sm:text-base">
+			<div className="container mx-auto grid grid-cols-5 place-items-center border text-xs sm:text-base">
 				<>
 					<Cell />
 					<Cell>
@@ -28,9 +28,15 @@ const Table = () => {
 							Pixel UA
 						</span>
 					</Cell>
+					<Cell>
+						<span className="text-xl font-bold tracking-widest lg:text-3xl">
+							Honorary 1:1
+						</span>
+					</Cell>
 				</>
 				<>
 					<Cell>Utility Ape Tools</Cell>
+					<Cell>&#10004;</Cell>
 					<Cell>&#10004;</Cell>
 					<Cell>&#10004;</Cell>
 					<Cell>&#10004;</Cell>
@@ -40,9 +46,11 @@ const Table = () => {
 					<Cell>&#10004;</Cell>
 					<Cell>&#10004;</Cell>
 					<Cell>&#10004;</Cell>
+					<Cell>&#10004;</Cell>
 				</>
 				<>
 					<Cell>Holder Discount Shop</Cell>
+					<Cell>&#10004;</Cell>
 					<Cell>&#10004;</Cell>
 					<Cell>&#10004;</Cell>
 					<Cell>&#10004;</Cell>
@@ -51,6 +59,7 @@ const Table = () => {
 					<Cell>Hold 5x Passive</Cell>
 					<Cell>&#10004;</Cell>
 					<Cell>&#10004;</Cell>
+					<Cell>&#x2717;</Cell>
 					<Cell>&#10004;</Cell>
 				</>
 				<>
@@ -58,17 +67,19 @@ const Table = () => {
 					<Cell>&#x2717;</Cell>
 					<Cell>&#10004;</Cell>
 					<Cell>&#x2717;</Cell>
+					<Cell>&#10004;</Cell>
 				</>
 				<>
 					<Cell>Deflationary</Cell>
 					<Cell>&#10004;</Cell>
 					<Cell>&#10004;</Cell>
 					<Cell>&#10004;</Cell>
+					<Cell>&#x2717;</Cell>
 				</>
 				{/* -----------------*/}
 				<>
 					<Cell>Engage to Earn</Cell>
-					<div className="col-span-3 grid h-full w-full grid-rows-2">
+					<div className="col-span-1 grid h-full w-full grid-rows-2">
 						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							Common - 100%
 						</div>
@@ -82,7 +93,7 @@ const Table = () => {
 							Elite - 110%
 						</div>
 					</div>
-					<div className="col-span-3 grid h-full w-full grid-rows-2">
+					<div className="col-span-1 grid h-full w-full grid-rows-2">
 						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							Common - 120%
 						</div>
@@ -97,6 +108,7 @@ const Table = () => {
 						</div>
 					</div>
 					<Cell>75%</Cell>
+					<Cell>100%</Cell>
 				</>
 				<>
 					<Cell>
@@ -107,7 +119,7 @@ const Table = () => {
 						</>
 					</Cell>
 					<Cell>5% all rarity</Cell>
-					<div className="col-span-3 grid h-full w-full grid-rows-2">
+					<div className="col-span-1 grid h-full w-full grid-rows-2">
 						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							10% common
 						</div>
@@ -122,11 +134,12 @@ const Table = () => {
 						</div>
 					</div>
 					<Cell>N/A</Cell>
+					<Cell>N/A</Cell>
 				</>
 				<>
 					<Cell>Airdrop</Cell>
 					<Cell>N/A</Cell>
-					<div className="col-span-3 grid h-full w-full grid-rows-2">
+					<div className="col-span-1 grid h-full w-full grid-rows-2">
 						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							Common - 12 days
 						</div>
@@ -144,15 +157,18 @@ const Table = () => {
 						</div>
 					</div>
 					<Cell>N/A</Cell>
+					<Cell>N/A</Cell>
 				</>
 				<>
 					<Cell>DAO Access</Cell>
 					<Cell>Full access</Cell>
 					<Cell>Full access</Cell>
 					<Cell>No alpha</Cell>
+					<Cell>No alpha</Cell>
 				</>
 				<>
 					<Cell>Missions Loot Box</Cell>
+					<Cell>Coming soon!</Cell>
 					<Cell>Coming soon!</Cell>
 					<Cell>Coming soon!</Cell>
 					<Cell>Coming soon!</Cell>
@@ -164,7 +180,7 @@ const Table = () => {
 
 const Cell = ({ children }: { children?: JSX.Element | string | null }) => {
 	return (
-		<div className="col-span-3 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
+		<div className="col-span-1 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 			{children}
 		</div>
 	);
