@@ -38,7 +38,7 @@ const Footer = () => {
 							</li>
 							<li className="mt-2 mr-2 inline-block md:mr-0 md:block">
 								<a
-									href="https://kairos-ua-landing-page.vercel.app/"
+									href="https://client.utilityape.com/"
 									target="_blank"
 									rel="noreferrer"
 									className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"

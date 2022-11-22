@@ -1,19 +1,26 @@
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
 	const [state, setState] = useState(false);
+	// const links = [
+	// 	{ href: "#benefits", text: "Benefits" },
+	// 	{ href: "#table", text: "Table" },
+	// 	{ href: "#dashboard", text: "Dashboard" },
+	// 	{ href: "#about", text: "About" },
+	// 	{ href: "#collections", text: "Collections" },
+	// 	{ href: "#testimonials", text: "Testimonials" },
+	// 	{ href: "#raid", text: "Raid" },
+	// 	{ href: "#faqs", text: "FAQs" },
+	// ];
+
 	const links = [
-		{ href: "#benefits", text: "Benefits" },
-		{ href: "#table", text: "Table" },
-		{ href: "#dashboard", text: "Dashboard" },
-		{ href: "#about", text: "About" },
-		{ href: "#collections", text: "Collections" },
-		{ href: "#testimonials", text: "Testimonials" },
-		{ href: "#raid", text: "Raid" },
-		{ href: "#faqs", text: "FAQs" },
-	];
+		{ text: "Client", href: "http://client.utilityape.com/" },
+		{ text: "Holders", href: "https://holders.utilityape.com/" },
+		{ text: "Mutate", href: "https://mutate.utilityape.com/" },
+		{ text: "Raid", href: "https://pay-to-raid.utilityape.com/" },
+		{ text: "Dashboard", href: "http://dashboard.utilityape.com/" },
+	]
 
 	useEffect(() => {
 		let scrollpos = window.scrollY;
@@ -81,7 +88,7 @@ const Navbar = () => {
 			className="fixed top-0 z-50 w-full font-poppins text-white transition duration-300 ease-in-out"
 		>
 			<div className="container mx-auto mt-0 flex w-full flex-wrap items-center justify-between p-4">
-				<Link href="/">
+				<a href="https://utilityape.com/">
 					<div className="toggleColour flex items-center gap-4 text-2xl font-bold text-white no-underline hover:no-underline lg:text-4xl">
 						<Image
 							priority
@@ -93,7 +100,7 @@ const Navbar = () => {
 						/>
 						Utility APE
 					</div>
-				</Link>
+				</a>
 				<div className="block pr-4 lg:hidden">
 					<button
 						id="nav-toggle"
