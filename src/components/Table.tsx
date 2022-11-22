@@ -116,16 +116,16 @@ const Table = () => {
 					</div>
 					<div className="col-span-3 grid h-full w-full grid-rows-2">
 						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
-							5% common
+							10% common
 						</div>
 						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
-							10% uncommon
+							15% uncommon
 						</div>
 						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
-							15% rare
+							25% rare
 						</div>
 						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
-							20% elite
+							35% elite
 						</div>
 					</div>
 					<Cell>N/A</Cell>
