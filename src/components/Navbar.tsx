@@ -111,9 +111,9 @@ const Navbar = () => {
 					<ul className="flex-1 flex-wrap items-center justify-center md:flex">
 						{links.map((link, idx) => {
 							return (
-								<li key={idx} className="mr-3">
+								<li key={idx} className="mr-2">
 									<a
-										className="toggleColour inline-block py-2 px-4 text-lg font-bold text-white no-underline"
+										className="toggleColour inline-block py-2 px-4 text-base font-bold text-white no-underline"
 										href={link.href}
 									>
 										{link.text}
