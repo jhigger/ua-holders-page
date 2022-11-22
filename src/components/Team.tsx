@@ -15,7 +15,7 @@ const Team = () => {
 		{
 			filter: "hue-rotate-[180deg]",
 			name: "Stax",
-			desc: "CTO, 10 years experience in development and cyber-security, founder of BotsOnDisplay, lead developer of Utility APE bots.",
+			desc: "CTO, 10 years' experience in development and cyber-security, founder of BotsOnDisplay, lead developer of Utility APE bots.",
 		},
 		{
 			filter: "hue-rotate-[0deg]",

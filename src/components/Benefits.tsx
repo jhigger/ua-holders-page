@@ -3,7 +3,7 @@ const Benefits = () => {
 		{
 			heading: "UA Token",
 			content:
-				"We're working on the development of our token, 20% of everything we create will go towards burning/ creating an LP for the token. Aiming Q1 of 2023",
+				"We're working on the development of our token, 20% of everything we create will go towards burning/creating an LP for the token. Aiming Q1 of 2023.",
 		},
 		{
 			heading: "Automated trading",
@@ -13,7 +13,7 @@ const Benefits = () => {
 		{
 			heading: "Coin Flip",
 			content:
-				"A Coin Clip program more powerful than most competitors in the space, both via website AND a unique Discord based coin flip bot. 20% of the fees will go towards the UA token.",
+				"A Coin Flip program more powerful than most competitors in the space, both via website AND a unique Discord based coin flip bot. 20% of the fees will go towards the UA token.",
 		},
 		{
 			heading: "Advisory & Launchpad opportunities",

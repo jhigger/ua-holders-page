@@ -15,7 +15,7 @@ const FAQ = () => {
 			a: "Details still being finalized, likely Q1 2023.",
 		},
 		{
-			q: "Is there benefits to holding all 3 apes?",
+			q: "Are there benefits to holding all 3 apes?",
 			a: "We're working on developing features for those who hold all 3.",
 		},
 	];
