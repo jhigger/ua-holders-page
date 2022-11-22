@@ -106,14 +106,7 @@ const Table = () => {
 							(burn required for discount to apply)
 						</>
 					</Cell>
-					<div className="col-span-3 grid h-full w-full grid-rows-2">
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
-							5% common / uncommon
-						</div>
-						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
-							12% rare / elite
-						</div>
-					</div>
+					<Cell>5% all rarity</Cell>
 					<div className="col-span-3 grid h-full w-full grid-rows-2">
 						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							10% common
