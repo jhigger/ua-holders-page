@@ -20,7 +20,7 @@ const Navbar = () => {
 		{ text: "Mutate", href: "https://mutate.utilityape.com/" },
 		{ text: "Raid", href: "https://pay-to-raid.utilityape.com/" },
 		{ text: "Dashboard", href: "http://dashboard.utilityape.com/" },
-	]
+	];
 
 	useEffect(() => {
 		let scrollpos = window.scrollY;
@@ -33,11 +33,11 @@ const Navbar = () => {
 			header?.classList.add("bg-black");
 			navaction?.classList.remove("bg-white");
 			navaction?.classList.add("gradient");
-			navaction?.classList.remove("text-gray-800");
+			navaction?.classList.remove("text-black");
 			navaction?.classList.add("text-white");
 			//Use to switch toggleColour colours
 			for (let i = 0; i < toToggle.length; i++) {
-				toToggle[i]?.classList.remove("text-gray-800");
+				toToggle[i]?.classList.remove("text-black");
 				toToggle[i]?.classList.add("text-white");
 			}
 			header?.classList.add("shadow");
@@ -54,7 +54,7 @@ const Navbar = () => {
 			//Use to switch toggleColour colours
 			for (let i = 0; i < toToggle.length; i++) {
 				toToggle[i]?.classList.remove("text-white");
-				toToggle[i]?.classList.add("text-gray-800");
+				toToggle[i]?.classList.add("text-black");
 			}
 
 			header?.classList.remove("shadow");
@@ -115,7 +115,7 @@ const Navbar = () => {
 						state ? "block" : "hidden"
 					}`}
 				>
-					<ul className="flex-1 flex-wrap items-center justify-center md:flex">
+					<ul className="flex-1 flex-wrap items-center justify-end md:flex">
 						{links.map((link, idx) => {
 							return (
 								<li key={idx} className="mr-2">
@@ -129,18 +129,6 @@ const Navbar = () => {
 							);
 						})}
 					</ul>
-					<a
-						href="https://discord.gg/hT3hYvdy"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<button
-							id="navAction"
-							className="focus:shadow-outline mx-auto hidden transform rounded-full bg-black py-3 px-6 font-bold text-white shadow transition duration-75 ease-in-out hover:bg-white hover:text-black active:scale-75 lg:mx-0 lg:block"
-						>
-							Demo
-						</button>
-					</a>
 				</div>
 			</div>
 			<hr className="my-0 border-b border-gray-100 py-0 opacity-25" />
