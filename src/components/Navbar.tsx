@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import DropDownMenu from "./DropDownMenu";
 
 const Navbar = () => {
 	const [state, setState] = useState(false);
@@ -21,6 +22,8 @@ const Navbar = () => {
 		{ text: "Raid", href: "https://pay-to-raid.utilityape.com/" },
 		{ text: "Dashboard", href: "http://dashboard.utilityape.com/" },
 	];
+
+	const dropDownItems = [{ label: "Coming soon!" }];
 
 	useEffect(() => {
 		let scrollpos = window.scrollY;
@@ -128,6 +131,9 @@ const Navbar = () => {
 								</li>
 							);
 						})}
+						<li className="mr-2">
+							<DropDownMenu items={dropDownItems} />
+						</li>
 					</ul>
 				</div>
 			</div>
