@@ -23,13 +23,13 @@ const FAQ = () => {
 	return (
 		<section
 			id="faqs"
-			className="-mb-[1px] bg-white py-16 px-8 leading-relaxed lg:px-8"
+			className="-mb-[1px] bg-gray-900 py-16 px-8 leading-relaxed lg:px-8"
 		>
-			<div className="space-y-3 text-center">
-				<h2 className="text-3xl font-semibold text-gray-800 lg:text-5xl">
+			<div className="space-y-3 text-center text-white">
+				<h2 className="text-3xl font-semibold lg:text-5xl">
 					Frequently Asked Questions
 				</h2>
-				<p className="mx-auto max-w-lg text-xl text-gray-600">
+				<p className="mx-auto max-w-lg text-xl">
 					Answered all frequently asked questions, Still confused?
 					feel free to ask in our{" "}
 					<a
@@ -69,12 +69,12 @@ const FaqsCard = (props: { item: { q: string; a: string } }) => {
 			className="mt-5 space-y-3 overflow-hidden border-b"
 			onClick={handleOpenAnswer}
 		>
-			<h3 className="flex cursor-pointer items-center justify-between py-4 text-lg font-medium text-gray-800">
+			<h3 className="flex cursor-pointer items-center justify-between py-4 text-lg font-medium">
 				{item.q}
 				{state ? (
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						className="ml-2 h-5 w-5 text-gray-500"
+						className="ml-2 h-5 w-5 text-gray-300"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor"
@@ -89,7 +89,7 @@ const FaqsCard = (props: { item: { q: string; a: string } }) => {
 				) : (
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						className="ml-2 h-5 w-5 text-gray-500"
+						className="ml-2 h-5 w-5 text-gray-300"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor"
@@ -108,7 +108,7 @@ const FaqsCard = (props: { item: { q: string; a: string } }) => {
 				style={state ? { height: answerH } : { height: "0px" }}
 			>
 				<div ref={answerElRef}>
-					<p className="text-gray-500">{item.a}</p>
+					<p className="text-gray-300">{item.a}</p>
 				</div>
 			</div>
 		</div>

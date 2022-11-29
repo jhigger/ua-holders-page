@@ -68,7 +68,7 @@ const Member = ({
 	desc: string;
 }) => {
 	return (
-		<li className="flex max-w-[38rem] rounded bg-gray-900 ring-1 ring-gray-800">
+		<li className="flex max-w-[38rem] overflow-hidden rounded bg-gray-900 ring-1 ring-gray-800">
 			<Image
 				src={src || "/assets/images/apes/gen1_common.png"}
 				alt="avatar"

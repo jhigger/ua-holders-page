@@ -2,9 +2,9 @@ const Table = () => {
 	return (
 		<section
 			id="table"
-			className="bg-white px-2 py-8 text-gray-800 lg:px-28"
+			className="bg-gray-900 px-2 py-8 text-white lg:px-28"
 		>
-			<h2 className="mb-4 w-full text-center text-3xl font-bold leading-tight text-gray-800 lg:text-5xl">
+			<h2 className="mb-4 w-full text-center text-3xl font-bold leading-tight lg:text-5xl">
 				Table
 			</h2>
 			<div className="mb-16 w-full">

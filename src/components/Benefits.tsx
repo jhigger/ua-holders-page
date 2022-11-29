@@ -38,15 +38,15 @@ const Benefits = () => {
 	];
 
 	return (
-		<section id="benefits" className="-mt-[1px] bg-white px-4 py-8">
-			<div className="container mx-auto flex flex-wrap">
-				<p className="my-2 w-full text-center text-xl font-semibold leading-tight text-gray-800">
+		<section id="benefits" className="-mt-[1px] bg-gray-900 px-4 py-8">
+			<div className="container mx-auto flex flex-wrap text-white">
+				<p className="my-2 w-full text-center text-xl font-semibold leading-tight">
 					Utility Ape Holders
 				</p>
-				<h2 className="my-2 w-full text-center text-3xl font-bold leading-tight text-gray-800 lg:text-5xl">
+				<h2 className="my-2 w-full text-center text-3xl font-bold leading-tight lg:text-5xl">
 					Benefits for <br /> holding a GEN 2?
 				</h2>
-				<p className="my-2 w-full text-center text-2xl leading-tight text-gray-800">
+				<p className="my-2 w-full text-center text-2xl leading-tight">
 					Giving back to our holders
 				</p>
 				<div className="mb-16 w-full">
@@ -59,11 +59,11 @@ const Benefits = () => {
 								key={idx}
 								className="flex w-full flex-shrink flex-grow flex-col p-6 text-center md:w-1/2 xl:w-1/4"
 							>
-								<div className="flex-1 rounded-3xl bg-gray-50 p-8 shadow transition duration-300 ease-in-out hover:bg-white hover:shadow-2xl">
-									<h3 className="mb-8 w-full text-xl font-bold text-gray-800">
+								<div className="flex-1 rounded-3xl bg-gray-200 p-8 shadow transition duration-300 ease-in-out hover:bg-gray-50 hover:shadow-2xl">
+									<h3 className="mb-8 w-full text-xl font-bold text-gray-900">
 										{item.heading}
 									</h3>
-									<p className="mb-5 text-base text-gray-500">
+									<p className="mb-5 text-base text-gray-600">
 										{item.content}
 									</p>
 								</div>
