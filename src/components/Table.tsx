@@ -67,7 +67,7 @@ const Table = () => {
 					<Cell>&#x2717;</Cell>
 					<Cell>&#10004;</Cell>
 					<Cell>&#x2717;</Cell>
-					<Cell>&#10004;</Cell>
+					<Cell>&#x2717;</Cell>
 				</>
 				<>
 					<Cell>Deflationary</Cell>
