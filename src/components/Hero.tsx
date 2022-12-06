@@ -27,7 +27,7 @@ const Hero = () => {
 					<p className="mb-8 text-xl leading-normal">
 						#1 Community growth tools in the space!
 					</p>
-					<DemoButton />
+					{/* <DemoButton /> */}
 				</div>
 				<div className="flex w-full justify-center py-6 px-4 md:w-2/5">
 					<Image
