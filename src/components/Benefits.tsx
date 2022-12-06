@@ -3,12 +3,12 @@ const Benefits = () => {
 		{
 			heading: "UA Token",
 			content:
-				"We're working on the development of our token, 20% of everything we create will go towards burning/creating an LP for the token. Aiming Q1 of 2023.",
+				"We're currently developing our token; 20% of revenue from everything we create will go towards burning/creating an LP for the token. Aiming for Q1 of 2023.",
 		},
 		{
 			heading: "Automated trading",
 			content:
-				"We're currently in production for an auto trader, capable of trading automagically for you with an estimate of 80% win rate on trades, allowing holders to profit on trading. 20% of profits made will go to the UA token.",
+				"We're currently building an auto trader capable of trading automagically for you with an estimated 80% win rate on trades; 20% of profits will go towards the UA token.",
 		},
 		{
 			heading: "Coin Flip",
@@ -18,17 +18,17 @@ const Benefits = () => {
 		{
 			heading: "Advisory & Launchpad opportunities",
 			content:
-				"We'll be offering launchpad services to other projects, 20% of what we raise will go back to the UA token. This includes art, community building, marketing help, and development work.",
+				"We'll be offering launchpad services to other projects; 20% of what we raise will go back to the UA token. This includes art, community building, marketing help, and development work.",
 		},
 		{
 			heading: "Engage-to-earn bot services",
 			content:
-				"The shape of UA, also given back to our holders via token, 25% of what we earn will go back to the UA token.",
+				"The backbone of UA with 25% of revenue from these bots going back to support the UA token.",
 		},
 		{
 			heading: "Additional development",
 			content:
-				"We're working on further development for our holders, to benefit the value of the token and also benefit the Utility usage for our holders.",
+				"We're working on further developments that will continue to add value to the UA token and provide additional utility for our holders.",
 		},
 		{
 			heading: "1:1 Honorary Art",

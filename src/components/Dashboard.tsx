@@ -58,7 +58,8 @@ const Dashboard = () => {
 			quarter: "3rd",
 			fundraising: false,
 			items: [
-				"Improvements and additions to all existing bots Client outreach pushing to 1000 clients",
+				"Improvements and additions to all existing bots",
+				"Client outreach pushing to 1000 clients",
 				"NFT portfolio checker",
 				"P&L Calc in NFT Tools",
 			],
@@ -82,9 +83,9 @@ const Dashboard = () => {
 					Roadmap
 				</h2>
 				<p className="my-2 w-full text-center text-2xl leading-tight">
-					We are constantly working on improvements and feature
-					additions, we have a ton planned for the development of UA
-					and expect our clients to continue to grow month to month.
+					We are constantly working on improvements and additional
+					features. We have a ton planned for the development of UA,
+					and we expect continued client growth month over month.
 				</p>
 				<div className="mb-16 w-full">
 					<div className="gradient mx-auto my-0 h-1 w-64 rounded-t py-0 opacity-25"></div>
