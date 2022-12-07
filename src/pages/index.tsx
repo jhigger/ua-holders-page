@@ -12,7 +12,6 @@ import Navbar from "../components/Navbar";
 import PayToRaid from "../components/PayToRaid";
 import Table from "../components/Table";
 import Team from "../components/Team";
-import Testimonials from "../components/Testimonials";
 
 const Home: NextPage = () => {
 	return (
@@ -34,7 +33,6 @@ const Home: NextPage = () => {
 				<Dashboard />
 				<Team />
 				<Collections />
-				<Testimonials />
 				<PayToRaid />
 				<FAQ />
 				<CTA />
