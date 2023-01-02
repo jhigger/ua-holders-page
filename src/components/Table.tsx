@@ -66,7 +66,7 @@ const Table = () => {
 					<Cell>Token Staking</Cell>
 					<Cell>&#x2717;</Cell>
 					<Cell>&#10004;</Cell>
-					<Cell>&#x2717;</Cell>
+					<Cell>&#10004;</Cell>
 					<Cell>&#x2717;</Cell>
 				</>
 				<>
@@ -118,7 +118,7 @@ const Table = () => {
 							(burn required for discount to apply)
 						</>
 					</Cell>
-					<Cell>5% all rarity</Cell>
+					<Cell>6% all rarity</Cell>
 					<div className="col-span-1 grid h-full w-full grid-rows-2">
 						<div className="col-span-6 flex h-full w-full items-center justify-center border p-0 text-center lg:p-4">
 							10% common
@@ -163,7 +163,7 @@ const Table = () => {
 					<Cell>DAO Access</Cell>
 					<Cell>Full access</Cell>
 					<Cell>Full access</Cell>
-					<Cell>No alpha</Cell>
+					<Cell>Full access</Cell>
 					<Cell>No alpha</Cell>
 				</>
 				<>
