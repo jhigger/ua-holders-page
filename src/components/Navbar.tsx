@@ -4,23 +4,16 @@ import DropDownMenu from "./DropDownMenu";
 
 const Navbar = () => {
 	const [state, setState] = useState(false);
-	// const links = [
-	// 	{ href: "#benefits", text: "Benefits" },
-	// 	{ href: "#table", text: "Table" },
-	// 	{ href: "#dashboard", text: "Dashboard" },
-	// 	{ href: "#about", text: "About" },
-	// 	{ href: "#collections", text: "Collections" },
-	// 	{ href: "#testimonials", text: "Testimonials" },
-	// 	{ href: "#raid", text: "Raid" },
-	// 	{ href: "#faqs", text: "FAQs" },
-	// ];
 
 	const links = [
 		{ text: "Client", href: "http://client.utilityape.com/" },
 		{ text: "Holders", href: "https://holders.utilityape.com/" },
-		{ text: "Mutate", href: "https://mutate.utilityape.com/" },
 		{ text: "Raid", href: "https://pay-to-raid.utilityape.com/" },
 		{ text: "Client Dashboard", href: "http://dashboard.utilityape.com/" },
+		{
+			text: "Coinflip",
+			href: "https://degencoinflip.com/utilityape",
+		},
 	];
 
 	const dropDownItems = [
@@ -31,10 +24,6 @@ const Navbar = () => {
 		{
 			label: "Staking",
 			link: "https://stake.utilityape.com/",
-		},
-		{
-			label: "Pixel Claim",
-			link: "https://pixel.utilityape.com/",
 		},
 		{
 			label: "Missions",
