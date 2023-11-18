@@ -1,11 +1,20 @@
 import Image from "next/image";
+import {
+	demoLink,
+	discordLink,
+	dropDownItems,
+	homeLink,
+	links,
+	twitterLink,
+	whitepaperLink,
+} from "../links";
 
 const Footer = () => {
 	return (
 		<footer className="bg-black font-poppins">
 			<div className="container mx-auto px-8">
-				<div className="flex w-full flex-col py-6 md:flex-row">
-					<div className="mb-6 flex-1 text-white">
+				<div className="flex w-full flex-col gap-16 py-6 md:flex-row">
+					<div className="mb-6 flex flex-1 items-center text-white">
 						<Image
 							src="/assets/images/logo.png"
 							alt="logo"
@@ -15,10 +24,10 @@ const Footer = () => {
 					</div>
 					<div className="flex-1">
 						<p className="uppercase text-gray-300 md:mb-6">Links</p>
-						<ul className="list-reset mb-6">
+						<ul className="list-reset mb-6 grid grid-cols-2">
 							<li className="mt-2 mr-2 inline-block md:mr-0 md:block">
 								<a
-									href="https://utilityape.com/"
+									href={homeLink}
 									target="_blank"
 									rel="noreferrer"
 									className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"
@@ -28,7 +37,7 @@ const Footer = () => {
 							</li>
 							<li className="mt-2 mr-2 inline-block md:mr-0 md:block">
 								<a
-									href="https://discord.gg/HRB2Cmdtcc"
+									href={demoLink}
 									target="_blank"
 									rel="noreferrer"
 									className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"
@@ -36,16 +45,50 @@ const Footer = () => {
 									Demo
 								</a>
 							</li>
+							{links.map((link) => {
+								return (
+									<li
+										key={link.text}
+										className="mt-2 mr-2 inline-block md:mr-0 md:block"
+									>
+										<a
+											href={link.href}
+											target="_blank"
+											rel="noreferrer"
+											className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"
+										>
+											{link.text}
+										</a>
+									</li>
+								);
+							})}
+							{dropDownItems.map((link) => {
+								return (
+									<li
+										key={link.text}
+										className="mt-2 mr-2 inline-block md:mr-0 md:block"
+									>
+										<a
+											href={link.href}
+											target="_blank"
+											rel="noreferrer"
+											className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"
+										>
+											{link.text}
+										</a>
+									</li>
+								);
+							})}
 						</ul>
 					</div>
 					<div className="flex-1">
 						<p className="uppercase text-gray-300 md:mb-6">
 							Contact
 						</p>
-						<ul className="list-reset mb-6">
+						<ul className="list-reset mb-6 flex flex-col">
 							<li className="mt-2 mr-2 inline-block md:mr-0 md:block">
 								<a
-									href="https://discord.com/invite/utilityape"
+									href={discordLink}
 									target="_blank"
 									rel="noreferrer"
 									className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"
@@ -55,7 +98,7 @@ const Footer = () => {
 							</li>
 							<li className="mt-2 mr-2 inline-block md:mr-0 md:block">
 								<a
-									href="https://twitter.com/utilityapeNFT"
+									href={twitterLink}
 									target="_blank"
 									rel="noreferrer"
 									className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"
@@ -72,7 +115,7 @@ const Footer = () => {
 						<ul className="list-reset mb-6">
 							<li className="mt-2 mr-2 inline-block md:mr-0 md:block">
 								<a
-									href="https://utility-ape.gitbook.io/utility-ape-whitepaper/"
+									href={whitepaperLink}
 									target="_blank"
 									rel="noreferrer"
 									className="text-gray-400 no-underline hover:text-indigo-400 hover:underline"

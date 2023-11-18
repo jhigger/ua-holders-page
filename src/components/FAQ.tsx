@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { discordLink } from "../links";
 
 const FAQ = () => {
 	const faqsList = [
@@ -34,7 +35,7 @@ const FAQ = () => {
 					feel free to ask in our{" "}
 					<a
 						className="text-indigo-600 underline"
-						href="https://discord.com/invite/utilityape"
+						href={discordLink}
 						target="_blank"
 						rel="noopener noreferrer"
 					>
